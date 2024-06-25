@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Gym Website - Additional Information</title>
+    <link rel="stylesheet" href="style.css">
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #f4f4f4;
+            color: #333;
+            margin: 0;
+            padding: 0;
+        }
+
+        main {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+            padding: 0 2em;
+        }
+
+        #additional-info {
+            background-color: #fff;
+            padding: 2em;
+            border-radius: 8px;
+            box-shadow: 0 0 15px rgba(0, 0, 0, 0.1);
+            max-width: 500px;
+            width: 100%;
+        }
+
+        #additional-info h2 {
+            text-align: center;
+            font-size: 2em;
+            margin-bottom: 1em;
+        }
+
+        #additional-info form {
+            display: flex;
+            flex-direction: column;
+        }
+
+        #additional-info label {
+            font-size: 1.1em;
+            margin-bottom: 0.5em;
+            color: #555;
+        }
+
+        #additional-info input[type="number"],
+        #additional-info select {
+            padding: 0.75em;
+            font-size: 1em;
+            margin-bottom: 1em;
+            border: 1px solid #ccc;
+            border-radius: 4px;
+        }
+
+        #additional-info button {
+            padding: 0.75em;
+            font-size: 1.1em;
+            background-color: #333;
+            color: white;
+            border: none;
+            border-radius: 4px;
+            cursor: pointer;
+        }
+
+        #additional-info button:hover {
+            background-color: #555;
+        }
+
+        footer {
+            background-color: #333;
+            color: white;
+            text-align: center;
+            padding: 1em 0;
+            position: fixed;
+            bottom: 0;
+            width: 100%;
+        }
+
+        footer p {
+            margin: 0;
+        }
+    </style>
+</head>
+<body>
+    <main>
+        <section id="additional-info">
+            <h2>Enter Your Information</h2>
+            <form action="save_additional_info.php" method="post">
+                <label for="height">Height (in cm):</label>
+                <input type="number" id="height" name="height" required>
+                <label for="weight">Weight (in kg):</label>
+                <input type="number" id="weight" name="weight" required>
+                <label for="goal">Fitness Goal:</label>
+                <select id="goal" name="goal" required>
+                    <option value="lose_weight">Lose Weight</option>
+                    <option value="increase_muscle">Increase Muscle</option>
+                </select>
+                <button type="submit">Submit</button>
+            </form>
+        </section>
+    </main>
+    <footer>
+        <p>&copy; 2024 Gym Website. All rights reserved.</p>
+    </footer>
+</body>
+</html>

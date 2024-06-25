@@ -1,0 +1,108 @@
+/* General Styles */
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #f4f4f4;
+    color: #333;
+}
+
+header {
+    background-color: #333;
+    color: white;
+    padding: 1em 0;
+    text-align: center;
+}
+
+header h1 {
+    margin: 0;
+}
+
+nav ul {
+    list-style: none;
+    padding: 0;
+    margin: 1em 0 0;
+    display: flex;
+    justify-content: center;
+}
+
+nav ul li {
+    margin: 0 1em;
+}
+
+nav ul li a {
+    color: white;
+    text-decoration: none;
+    font-weight: bold;
+}
+
+nav ul li a:hover {
+    text-decoration: underline;
+}
+
+/* Main Section Styles */
+main {
+    padding: 2em;
+    text-align: center;
+}
+
+main h2 {
+    font-size: 2em;
+    margin-bottom: 1em;
+}
+
+main p {
+    font-size: 1.2em;
+    margin: 0.5em 0;
+}
+
+main h3 {
+    font-size: 1.5em;
+    margin-top: 1em;
+}
+
+.team {
+    display: flex;
+    justify-content: center;
+    margin-top: 1em;
+}
+
+.team-member {
+    margin: 0 1em;
+    text-align: center;
+}
+
+.team-member img {
+    width: 150px;
+    height: 150px;
+    border-radius: 50%;
+    margin-bottom: 0.5em;
+}
+
+.gallery {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    margin-top: 1em;
+}
+
+.gallery img {
+    width: 200px;
+    height: 150px;
+    margin: 0.5em;
+    border-radius: 4px;
+    object-fit: cover;
+}
+
+/* Footer Styles */
+footer {
+    background-color: #333;
+    color: white;
+    text-align: center;
+    padding: 1em 0;
+    margin-top: 2em;
+}
+
+footer p {
+    margin: 0;
+}

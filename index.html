@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Gym Website - Home</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <header>
+        <h1>Welcome to Our Gym</h1>
+        <nav>
+            <ul>
+                <li><a href="about.html">About</a></li>
+                <li><a href="login.html">Login</a></li>
+            </ul>
+        </nav>
+    </header>
+    <main>
+        <section id="hero">
+            <img src="images/compress-strong-man-training-gym-min-1536x1024.jpg" alt="Gym Image" class="hero-image">
+            <div class="hero-text">
+                <h2>Get Fit, Stay Healthy</h2>
+                <p>Join us for the best fitness experience.</p>
+                <a href="register.html" class="btn">Join Now</a>
+            </div>
+        </section>
+        <section id="features">
+            <h2>Our Features</h2>
+            <ul>
+                <li>State-of-the-art equipment</li>
+                <li>Professional trainers</li>
+                <li>Wide range of classes</li>
+                <li>Personalized training plans</li>
+            </ul>
+        </section>
+        <section id="testimonials">
+            <h2>What Our Members Say</h2>
+            <div class="testimonial">
+                <img src="images/360_F_99821575_nVEHTBXzUnTcLIKN6yOymAWAnFwEybGb.jpg" alt="Alex Johnson">
+                <p>"The best gym experience I've ever had. The trainers are professional and the equipment is top-notch."</p>
+                <p>- Alex Johnson</p>
+            </div>
+            <div class="testimonial">
+                <img src="images/pngtree-sports-and-fitness-night-girl-gym-fitness-photography-pictures-with-pictures-photo-image_15542621.png" alt="Sarah Williams">
+                <p>"I love the variety of classes available. There's something for everyone."</p>
+                <p>- Sarah Williams</p>
+            </div>
+        </section>
+        <section id="membership">
+            <h2>Membership Plans</h2>
+            <div class="plan">
+                <h3>Basic Plan</h3>
+                <p>$20/month</p>
+                <p>Access to all equipment</p>
+                <p>1 personal training session</p>
+                <a href="register.html" class="btn">Sign Up</a>
+            </div>
+            <div class="plan">
+                <h3>Premium Plan</h3>
+                <p>$50/month</p>
+                <p>Access to all equipment</p>
+                <p>Unlimited personal training</p>
+                <p>Access to all classes</p>
+                <a href="register.html" class="btn">Sign Up</a>
+            </div>
+        </section>
+        <section id="contact">
+            <h2>Contact Us</h2>
+            <form action="contact.php" method="post">
+                <label for="name">Name:</label>
+                <input type="text" id="name" name="name" required>
+                <label for="email">Email:</label>
+                <input type="email" id="email" name="email" required>
+                <label for="message">Message:</label>
+                <textarea id="message" name="message" required></textarea>
+                <button type="submit" class="btn">Send Message</button>
+            </form>
+        </section>
+    </main>
+    <footer>
+        <p>&copy; 2024 Gym Website. All rights reserved.</p>
+    </footer>
+</body>
+</html>
